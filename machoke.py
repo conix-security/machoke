@@ -140,13 +140,13 @@ class Machoke:
                             word = "{}{},".format(word, ublock["id_block"])
                 else:
                     pass
-                if word[-2] == 'c':
-                    for ublock in blocks:
-                        if hex(instruction["offset"] + 4) == ublock["offset"]:
-                            word = "{}{},".format(word, ublock["id_block"])
+            if word[-2] == 'c':
+                for ublock in blocks:
+                    if hex(instruction["offset"] + 4) == ublock["offset"]:
+                        word = "{}{},".format(word, ublock["id_block"])
 
-                    if word[-2] == 'c':
-                        word = "{}{},".format(word, id_block + 1)
+                if word[-2] == 'c':
+                    word = "{}{},".format(word, id_block + 1)
 
             if word[-1] == ":" and id_block != len(fcode[0]["blocks"]):
                 word = "{}{},".format(word, id_block + 1)
