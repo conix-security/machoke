@@ -5,9 +5,9 @@ by [CERT-Conix](http://blog.conixsecurity.fr/machoke-hashing/).
 
 ## Original work
 
-This implementation is based on Machoc, originally published by ANSSI during SSTIC2015 as a part of polichombr (https://github.com/ANSSI-FR/polichombr).
+This implementation is based on Machoc, originally published by ANSSI during SSTIC2015 as a part of polichombr (https://github.com/ANSSI-FR/polichombr). The original algorithm is the work of @Heurs.
 
-The algorythm is roughly the same, but unlike ANSSI's Machoc, is implemented using radare2 and r2pipe instead of miasm or IDApython.
+Our implementation is roughly the same, but unlike ANSSI's Machoc, is implemented using radare2 and r2pipe instead of miasm or IDApython.
 
 ##  Objectives
 
