@@ -72,8 +72,8 @@ class Machoke:
         for function in functions:
             machoke = self.get_machoke_from_function(function)
             self.machoke_line = "{}{}".format(self.machoke_line, machoke)
-            self.mmh3_line = "{}{}".format(self.mmh3_line,
-                hex(mmh3.hash(machoke) & 0xFFFFFFFF).replace("0x", "").replace("L", ""))
+            self.mmh3_line = "{}{:08x}".format(self.mmh3_line,
+                mmh3.hash(machoke) & 0xFFFFFFFF)
         self.rdeux.quit()
 
     def kill(self, message):
